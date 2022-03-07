@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ru.rambler.libs.swipe_layout.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:swipe_enabled="true">
+
+    <LinearLayout
+        android:id="@+id/ll_poster"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="15dp"
+        android:visibility="visible"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="17sp"
+                android:text="Age: "
+                android:textStyle="italic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tv_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="28"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:layout_marginStart="20dp"
+                android:textSize="17sp"
+                android:text="Salary($): "
+                android:textStyle="italic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tv_salary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1000"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="normal" />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_delete"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:background="#F42121"
+        android:gravity="center"
+        app:bring_to_clamp="100dp"
+        app:clamp="self"
+        app:gravity="right"
+        app:sticky="none">
+
+        <ImageView
+            android:layout_width="40sp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_delete" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_update"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:background="#1845ED"
+        android:gravity="center"
+        app:bring_to_clamp="150dp"
+        app:clamp="self"
+        app:gravity="left"
+        app:sticky="100dp">
+
+        <ImageView
+            android:layout_width="40sp"
+            android:layout_height="match_parent"
+            android:src="@drawable/ic_edit" />
+    </LinearLayout>
+
+
+</ru.rambler.libs.swipe_layout.SwipeLayout>
